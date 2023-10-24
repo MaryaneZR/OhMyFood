@@ -1,0 +1,37 @@
+/********General********/
+* {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+/***********Restaurant*******/
+
+.titre_restaurant h1{
+    font-family: 'Shrikhand', serif;
+    display: flex;
+    justify-content: center;
+}
+
+.image_restaurant img {
+    height: 200px;
+    width: 400px;
+    object-fit: cover ;
+
+}
+
+.card_plat {
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    box-shadow: -1px 6px 15px -7px #000000;
+    margin: 1rem;
+    padding: 1rem;
+}

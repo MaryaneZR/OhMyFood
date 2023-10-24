@@ -1,5 +1,7 @@
+/********General********/
 * {
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -8,8 +10,11 @@ body {
 }
 
 main {
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
 }
+
+/*******Header*******/
 
 header {
     display: flex;
@@ -17,8 +22,9 @@ header {
 }
 
 header img {
-    max-width: 30%;
+    max-width: 40%;
     align-self: center;
+    padding: 1rem 3rem;
 }
 
 .localisation {
@@ -26,12 +32,48 @@ header img {
     background-color: #EAEAEA;
     padding: 1rem;
     gap: 1rem;
+    color: #353535;
+}
+
+.bold {
+    font-weight: bolder;
 }
 
 .explorer {
-flex-wrap: wrap;
-background-color: grey;
-margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.explorer button {
+    display: flex;
+    background: linear-gradient(151deg, rgba(252,167,255,1) 13%, rgba(148,83,170,1) 75%);
+    box-shadow: -1px 6px 15px -7px #000000;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+/********Fonctionnement******/ 
+
+.explorer p {
+    margin: 1rem;
+}
+
+.fonctionnement p {
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    box-shadow: -1px 6px 15px -7px #000000;
+}
+
+/*******Restaurants******/
+
+h3 {
+    display: flex;
+    justify-content: center;
 }
 
 .card_restaurant {
@@ -46,18 +88,31 @@ margin: 1rem;
     max-height: 14rem;
 }
 
-.explorer p {
-    margin: 1rem;
+.cards_restaurants {
+    display: flex;
+    flex-direction: column;
 }
 
-.fonctionnement p {
-    background-color: rgb(230, 230, 230);
-    border-radius: 15px;
-    padding: 1rem;
-    margin: 2rem 1rem;
-}
+
+
+/******Footer*****/
 
 footer {
     background-color: #353535;
     color: whitesmoke;
+    padding: 2rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+.logo_white {
+    font-family: 'Shrikhand', serif;
+}
+
+footer img {
+    height: 20px;
+    width: 120px;
+    margin-bottom: 2rem;
 }
