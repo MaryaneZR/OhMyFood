@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-color: grey;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    max-width: 30%;
+    align-self: center;
+}
+
+.localisation {
+    display: inline-flex;
+    background-color: #EAEAEA;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.explorer {
+flex-wrap: wrap;
+background-color: grey;
+margin: 1rem;
+}
+
+.card_restaurant {
+    background-color: whitesmoke;
+    margin: 1rem 3rem;
+    border-radius: 10px;
+}
+
+.card_restaurant img {
+    object-fit: cover;
+    max-width: 15rem;
+    max-height: 14rem;
+}
+
+.explorer p {
+    margin: 1rem;
+}
+
+.fonctionnement p {
+    background-color: rgb(230, 230, 230);
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 2rem 1rem;
+}
+
+footer {
+    background-color: #353535;
+    color: whitesmoke;
+}
