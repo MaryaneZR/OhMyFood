@@ -22,12 +22,18 @@ header {
 }
 
 header img {
-    max-width: 40%;
-    align-self: center;
-    padding: 1rem 3rem;
+    max-width: 50%;
 }
 
+ .img_ohmyfood {
+    display: flex;
+    z-index: 2;
+    padding: 1rem 3rem;
+    box-shadow: 0px -3px 12px 2px #000000;
+ }
+
 .localisation {
+    z-index: 1;
     display: inline-flex;
     background-color: #EAEAEA;
     padding: 1rem;
@@ -54,19 +60,41 @@ header img {
     border-radius: 15px;
     padding: 10px;
     color: #ffffff;
+    font-weight: 500;
 }
-
-/********Fonctionnement******/ 
 
 .explorer p {
     margin: 1rem;
 }
 
+/********Fonctionnement******/ 
+
 .fonctionnement p {
-    border-radius: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.card_fonctionnement i {
+    margin-top: 4px;
+}
+
+.card_fonctionnement {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
     padding: 1rem;
-    margin: 2rem 1rem;
+    width: 20rem;
+    border-radius: 15px;
     box-shadow: -1px 6px 15px -7px #000000;
+}
+
+.number {
+    position: relative;
+    right: 10px;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: #9356DC;
+    color: #ffffff;
 }
 
 /*******Restaurants******/
@@ -77,15 +105,23 @@ h3 {
 }
 
 .card_restaurant {
+    position: relative;
+    width: 90%;
+
+    overflow: hidden;
     background-color: whitesmoke;
-    margin: 1rem 3rem;
+    margin: 1rem;
     border-radius: 10px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card_restaurant img {
     object-fit: cover;
-    max-width: 15rem;
-    max-height: 14rem;
+    width: 100%;
+    max-height: 15rem;
+    height: auto;
+    display: block;
 }
 
 .cards_restaurants {
