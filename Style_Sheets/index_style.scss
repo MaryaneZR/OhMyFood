@@ -9,11 +9,6 @@ body {
     flex-direction: column;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-}
-
 a:link,
 a:visited {
     text-decoration: none;
@@ -46,8 +41,30 @@ header {
         color: #353535;
     }
 
+}
+
+/******* Fonctionnement *******/
+article {
+
+    button {
+        display: flex;
+        background: linear-gradient(180deg, rgb(250 117 255) 13%, rgb(172 79 203) 75%);
+        box-shadow: -1px 6px 15px -7px #000000;
+        border: none;
+        border-radius: 15px;
+        padding: 10px;
+        max-width: fit-content;
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+}
+
+
     .bold {
         font-weight: bolder;
+        font-size: x-large;
+        margin: 4px 3rem 10px 5rem;
     }
 
     .explorer {
@@ -57,30 +74,18 @@ header {
         margin-bottom: 1rem;
         background-color: #F6F6F6;
 
-        .button_explorer {
-            display: flex;
-            background: linear-gradient(151deg, rgba(252, 167, 255, 1) 13%, rgba(148, 83, 170, 1) 75%);
-            box-shadow: -1px 6px 15px -7px #000000;
-            border: none;
-            border-radius: 15px;
-            padding: 10px;
-            max-width: fit-content;
-            color: #ffffff;
-            font-weight: 500;
-            margin-bottom: 3rem;
-        }
-
         p {
-            margin: 1rem;
+            margin: 10px 50px;
             display: flex;
             flex-direction: column;
         }
     }
-}
 
-/******* Fonctionnement *******/
+
+
 
 .fonctionnement {
+
     p {
         margin-left: 15px;
         margin-top: 5px;
@@ -105,7 +110,9 @@ header {
     }
 }
 
+
 /******* Restaurants *******/
+
 
 h3 {
     display: flex;
@@ -159,6 +166,7 @@ h3 {
     background-color: whitesmoke;
 }
 
+
 /******* Footer *******/
 
 footer {
@@ -166,12 +174,9 @@ footer {
     color: whitesmoke;
     padding: 2rem;
 
-    p {
-        margin-bottom: 1rem;
-    }
-
     .logo_white {
         font-family: 'Shrikhand', serif;
+        margin-bottom: 1rem;
     }
 
     img {
@@ -179,4 +184,13 @@ footer {
         width: 120px;
         margin-bottom: 2rem;
     }
+
+    i {
+        margin-right: 7px;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+
 }
