@@ -23,8 +23,12 @@ h2 {
   margin-bottom: 1rem;
 }
 
-section {
-  margin: 0;
+header .logo_black {
+  display: flex;
+  font-family: "Shrikhand", serif;
+  padding: 8px;
+  font-size: xx-large;
+  align-self: center;
 }
 
 /******** Restaurant ********/

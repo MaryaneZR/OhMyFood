@@ -15,6 +15,14 @@ a:visited {
   color: #000000;
 }
 
+header .logo_black {
+  display: flex;
+  font-family: "Shrikhand", serif;
+  padding: 8px;
+  font-size: xx-large;
+  align-self: center;
+}
+
 /******* Header *******/
 header {
   display: flex;
@@ -36,26 +44,32 @@ header .localisation {
   padding: 1rem;
   gap: 1rem;
   color: #353535;
+  justify-content: center;
+  font-weight: 600;
+  font-size: small;
 }
 
 /******* Fonctionnement *******/
-article button {
+.button_explorer {
   display: flex;
   background: linear-gradient(180deg, rgb(250, 117, 255) 13%, rgb(172, 79, 203) 75%);
   box-shadow: -1px 6px 15px -7px #000000;
   border: none;
-  border-radius: 15px;
-  padding: 10px;
+  border-radius: 30px;
+  padding: 15px;
   max-width: fit-content;
   color: #ffffff;
-  font-weight: bold;
   margin-bottom: 3rem;
+}
+
+section h3 {
+  margin: 1rem;
 }
 
 .bold {
   font-weight: bolder;
   font-size: x-large;
-  margin: 4px 3rem 10px 5rem;
+  margin: 18px 1rem -1rem 0rem;
 }
 
 .explorer {
@@ -66,9 +80,9 @@ article button {
   background-color: #F6F6F6;
 }
 .explorer p {
-  margin: 10px 50px;
   display: flex;
   flex-direction: column;
+  margin: 1rem 5rem;
 }
 
 .fonctionnement p {
@@ -77,26 +91,33 @@ article button {
 }
 .fonctionnement .card_fonctionnement {
   display: flex;
-  justify-content: center;
   margin: 1rem;
   padding: 1rem;
   border-radius: 15px;
   box-shadow: -1px 6px 15px -7px #000000;
 }
 .fonctionnement .card_fonctionnement .number {
+  height: 13px;
+  width: 11px;
   position: relative;
-  right: 10px;
+  top: 2px;
+  right: 24px;
   padding: 5px;
-  border-radius: 30px;
+  border-radius: 50%;
   background-color: #9356DC;
   color: #ffffff;
+  text-align: center;
+  font-size: smaller;
+}
+.fonctionnement .card_fonctionnement i {
+  position: relative;
+  top: 6px;
 }
 
 /******* Restaurants *******/
 h3 {
   display: flex;
   margin-right: 1rem;
-  padding: 1rem;
   font-size: larger;
 }
 
@@ -142,14 +163,15 @@ h3 {
 }
 
 /******* Footer *******/
+.logo_white {
+  font-family: "Shrikhand", serif;
+  margin-bottom: 1rem;
+}
+
 footer {
   background-color: #353535;
   color: whitesmoke;
   padding: 2rem;
-}
-footer .logo_white {
-  font-family: "Shrikhand", serif;
-  margin-bottom: 1rem;
 }
 footer img {
   height: 20px;
