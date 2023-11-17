@@ -15,6 +15,45 @@ a:visited {
   color: #000000;
 }
 
+@media screen and (min-width: 900px) {
+  body {
+    min-width: 1053px;
+  }
+  .all_cards_fonctionnement {
+    display: inline-flex;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .all_cards_fonctionnement .card_fonctionnement {
+    min-width: 15rem;
+  }
+  .all_cards_restaurant {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  footer {
+    background-color: #353535;
+    color: whitesmoke;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  footer p {
+    margin-right: 1rem;
+  }
+  footer .logo_white {
+    margin-left: 2rem;
+  }
+}
+/******* Header *******/
+header {
+  display: flex;
+  flex-direction: column;
+}
 header .logo_black {
   display: flex;
   font-family: "Shrikhand", serif;
@@ -22,20 +61,11 @@ header .logo_black {
   font-size: xx-large;
   align-self: center;
 }
-
-/******* Header *******/
-header {
-  display: flex;
-  flex-direction: column;
-}
-header img {
-  max-width: 50%;
-}
-header .img_ohmyfood {
+header .logo_header {
   display: flex;
   z-index: 2;
-  padding: 1rem 3rem;
-  box-shadow: 0px -3px 12px 2px #000000;
+  box-shadow: 4px 0px 15px -3px rgba(0, 0, 0, 0.99);
+  justify-content: center;
 }
 header .localisation {
   z-index: 1;
@@ -60,6 +90,7 @@ header .localisation {
   max-width: fit-content;
   color: #ffffff;
   margin-bottom: 3rem;
+  align-self: center;
 }
 
 section h3 {
@@ -74,10 +105,12 @@ section h3 {
 
 .explorer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 1rem;
   background-color: #F6F6F6;
+  align-items: center;
 }
 .explorer p {
   display: flex;
@@ -91,10 +124,10 @@ section h3 {
 }
 .fonctionnement .card_fonctionnement {
   display: flex;
-  margin: 1rem;
+  margin: 1rem 2rem;
   padding: 1rem;
   border-radius: 15px;
-  box-shadow: -1px 6px 15px -7px #000000;
+  box-shadow: -2px 2px 7px -4px #000000;
 }
 .fonctionnement .card_fonctionnement .number {
   height: 13px;

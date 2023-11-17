@@ -7,6 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 main {
@@ -23,14 +24,64 @@ h2 {
     margin-bottom: 1rem;
 }
 
-header {
-    .logo_black {
-        display: flex;
-        font-family: 'Shrikhand', serif;
-        padding: 8px;
-        font-size: xx-large;
-        align-self: center;
+@media screen and (min-width: 900px){
+
+    body {
+        min-width: 958px;
+        margin: 0px;
     }
+
+    .restaurant_menu {
+        align-self: center;
+        min-width: 60rem;
+    }
+
+    footer {
+        background-color: #353535;
+        color: whitesmoke;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+
+        p {
+            margin-right: 1rem;
+        }
+
+        .logo_white {
+            margin-left: 2rem;
+        }
+    }
+
+}
+
+/**********************************************************************/
+
+header {
+    display: flex;
+    padding: 1rem;
+
+    .logo_black {
+        font-family: 'Shrikhand', serif;
+        font-size: xx-large;
+    }
+
+    a {
+        display: flex;
+        text-decoration: none;
+    }
+}
+
+.button_explorer {
+    display: flex;
+    background: linear-gradient(180deg, rgb(250 117 255) 13%, rgb(172 79 203) 75%);
+    box-shadow: -1px 6px 15px -7px #000000;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    max-width: fit-content;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    align-self: center;
 }
 
 /******** Restaurant ********/
@@ -85,4 +136,33 @@ header {
 .menu {
     display: flex;
     flex-direction: column;
+}
+
+
+/******* Footer *******/
+
+.logo_white {
+    font-family: 'Shrikhand', serif;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #353535;
+    color: whitesmoke;
+    padding: 2rem;
+
+    img {
+        height: 20px;
+        width: 120px;
+        margin-bottom: 2rem;
+    }
+
+    i {
+        margin-right: 7px;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+
 }
