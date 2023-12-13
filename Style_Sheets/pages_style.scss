@@ -24,7 +24,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
 
     body {
         min-width: 958px;
@@ -58,9 +58,11 @@ h2 {
 
 header {
     display: flex;
-    padding: 1rem;
+    padding: 0.5rem;
 
     .logo_black {
+        display: flex;
+        margin: auto;
         font-family: 'Shrikhand', serif;
         font-size: xx-large;
     }
@@ -68,6 +70,7 @@ header {
     a {
         display: flex;
         text-decoration: none;
+        align-items: center;
     }
 }
 
@@ -82,6 +85,14 @@ header {
     color: #ffffff;
     margin-bottom: 3rem;
     align-self: center;
+    transition-duration: 400ms;
+    font-weight: 400;
+}
+
+.button_explorer:hover {
+    box-shadow: 0px 8px 20px -7px #000000;
+    background: linear-gradient(180deg, rgb(252, 153, 255) 13%, rgb(178, 102, 203) 75%);
+    transform: scale(1.1);
 }
 
 /******** Restaurant ********/
@@ -104,12 +115,67 @@ header {
     }
 }
 
+.part_menu {
+    display: flex;
+    flex-direction: column;
+}
+
+$initial-width : 0;
+$animation-duration : 0.5s;
+
 .card_plat {
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     box-shadow: -1px 6px 15px -7px #000000;
     margin: 1rem;
-    padding: 1rem;
+    max-height: 5rem;
+    position: relative;
+    padding: 15px;
 
+    .ligne_card_plat {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+
+        span {
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+
+        .animation_check_in {
+
+            display: flex;
+            align-items: center;
+            background-color: #99E2D0;
+            border-radius: 0 10px 10px 0;
+            width: $initial-width;
+            height: 100%;
+            overflow: hidden;
+            transition: width $animation-duration ease-in-out;
+
+            i {
+                color: #f6f6f6;
+                align-self: center;
+                padding: 1.5rem;
+            }
+
+        }
+
+        h3,
+        p {
+            padding: 5px 10px 10px;
+        }
+    }
+
+    &:hover {
+        .animation_check_in {
+            width: 4rem;
+        }
+    }
 }
 
 .restaurant_menu {
@@ -120,13 +186,6 @@ header {
     background-color: #f6f6f6;
     border-radius: 30px 30px 0 0;
 
-    span {
-        display: flex;
-        flex-direction: row-reverse;
-        font-weight: bold;
-        position: relative;
-        bottom: 1rem;
-    }
 }
 
 .part_menu {

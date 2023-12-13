@@ -38,6 +38,7 @@ a:visited {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 2rem;
+        padding-bottom: 2rem;
     }
 
     footer {
@@ -106,6 +107,13 @@ header {
     color: #ffffff;
     margin-bottom: 3rem;
     align-self: center;
+    transition-duration: 400ms;
+}
+
+.button_explorer:hover {
+    box-shadow: 0px 8px 20px -7px #000000;
+    background: linear-gradient(180deg, rgb(252, 153, 255) 13%, rgb(178, 102, 203) 75%);
+    transform: scale(1.1);
 }
 
 
@@ -151,6 +159,7 @@ section {
         padding: 1rem;
         border-radius: 15px;
         box-shadow: -2px 2px 7px -4px #000000;
+        background-color: #F6F6F6;
 
         .number {
             height: 13px;
@@ -183,50 +192,52 @@ h3 {
     font-size: larger;
 }
 
-.card_restaurant {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 90%;
-    overflow: hidden;
-    margin: 1rem;
-    border-radius: 10px;
-    object-fit: cover;
-    background-color: #ffffff;
-
-    img {
-        object-fit: cover;
-        width: 100%;
-        max-height: 10rem;
-        height: auto;
-        display: block;
-    }
-
-    .texte_card_restaurant {
+    .card_restaurant {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        position: relative;
+        width: 90%;
+        overflow: hidden;
+        margin: 1rem;
+        border-radius: 10px;
+        object-fit: cover;
+        background-color: #ffffff;
 
-        i {
-            display: flex;
-            flex-direction: row-reverse;
+        img {
+            object-fit: cover;
+            width: 100%;
+            max-height: 10rem;
+            height: auto;
+            display: block;
         }
 
-        button {
-            border: none;
-            background-color: transparent;
-            position: relative;
-            top: -20px;
-            right: 20px;
+        .texte_card_restaurant {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            i {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            button {
+                border: none;
+                background-color: transparent;
+                position: relative;
+                top: -20px;
+                right: 20px;
+            }
         }
     }
-}
 
-.cards_restaurants {
-    display: flex;
-    flex-direction: column;
-    background-color: whitesmoke;
-}
+    .cards_restaurants {
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        justify-content: center;
+    }
+
 
 
 /******* Footer *******/
