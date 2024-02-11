@@ -92,7 +92,7 @@ header .localisation {
   color: #ffffff;
   margin-bottom: 3rem;
   align-self: center;
-  transition-duration: 400ms;
+  transition-duration: 300ms;
 }
 
 .button_explorer:hover {
@@ -173,6 +173,18 @@ h3 {
   border-radius: 10px;
   object-fit: cover;
   background-color: #ffffff;
+}
+.card_restaurant .nouveau {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  color: #008766;
+  padding: 6px;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  z-index: 2;
+  top: 10%;
+  left: 85%;
 }
 .card_restaurant img {
   object-fit: cover;
